@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seventh lesson</title>
+</head>
+
+<body>
+    <script>
+        let mainArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+        function multiplicationTable(array) {
+            let arrayResult = [];
+            for (let i = 0; i < array.length; i++) {
+                arrayResult[i] = [];
+                for (let j = 0; j < array.length; j++) {
+                    arrayResult[i][j] = (array[i] * array[j]);
+                }
+            }
+            return arrayResult;
+        }
+        console.log(multiplicationTable(mainArray));
+
+    </script>
+</body>
+
+</html>
